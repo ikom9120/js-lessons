@@ -1,0 +1,19 @@
+<script>
+    let date = new Date();
+
+    if (date.getMinutes() < 10 || date.getMinutes() > 20) {
+        document.write('OK');
+    }
+    else {
+        document.write('NOT OK<br>');
+    }
+
+
+    if (date.getMinutes() < 10 || date.getMinutes() > 20 || date.getSeconds() == 30) {
+        document.write('OK');
+    }
+    else {
+        document.write('NOT OK');
+    }
+
+</script>
