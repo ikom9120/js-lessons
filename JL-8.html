@@ -1,0 +1,58 @@
+<script>
+
+    //1
+
+    function getWeekDay() {
+        let date = new Date();
+        switch (date.getDay()) {
+            case 0:
+                return 'Воскресенье';
+            case 1:
+                return 'Понедельник';
+            case 2:
+                return 'Вторник';
+            case 3:
+                return 'Среда';
+            case 4:
+                return 'Четверг';
+            case 5:
+                return 'Пятница';
+            case 6:
+                return 'Cуббота';
+        }
+    }
+    document.write(getWeekDay() + '<br>');
+
+    //2
+
+    function getWeekDay2() {
+        let date = new Date();
+        switch (date.getDay()) {
+            case 0:
+                document.write('Воскресенье');
+                break;
+            case 1:
+                document.write('Понедельник');
+                break;
+            case 2:
+                document.write('Вторник');
+                break;
+            case 3:
+                document.write('Среда');
+                break;
+            case 4:
+                document.write('Четверг');
+                break;
+            case 5:
+                document.write('Пятница');
+                break;
+            case 6:
+                document.write('Cуббота');
+                break;
+        }
+    }
+    getWeekDay2();
+
+
+
+</script>
