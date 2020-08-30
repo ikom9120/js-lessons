@@ -1,0 +1,16 @@
+<script>
+
+    function getTimeSec() {
+        let s = new Date();
+        return s.getSeconds();
+    }
+
+    if (getTimeSec() > 20 && getTimeSec() < 40) {
+        document.write('OK');
+    }
+    else {
+        document.write('NOT OK');
+    }
+
+
+</script>
