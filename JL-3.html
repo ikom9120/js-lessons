@@ -1,0 +1,24 @@
+<script>
+
+    function getTimeSec() {
+        let s = new Date();
+        return s.getSeconds();
+    }
+
+    if (getTimeSec() <= 30) {
+        console.log('OK');
+    }
+    else {
+        console.log('NOT OK');
+    }
+
+    if (getTimeSec() > 30 && getTimeSec() < 50) {
+        console.log('OK');
+    }
+    else {
+        console.log('NOT OK');
+    }
+
+
+
+</script>
