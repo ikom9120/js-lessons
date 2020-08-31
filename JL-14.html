@@ -1,0 +1,30 @@
+<script>
+
+    //1
+
+    function getHost(param) {
+        param();
+    }
+
+    getHost(
+        function () {
+            document.write('Hello World!');
+        }
+
+    );
+
+    //2
+
+
+    function getTime(sec) {
+        return sec();
+    }
+
+    getTime(
+        function () {
+            let s = new Date();
+            return s.getSeconds();
+        }
+    );
+
+</script>
