@@ -1,0 +1,14 @@
+<script>
+
+    //1
+    function getRandomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+
+    //2
+    function getHostRandomInteger() {
+        return 'Случайное число:' + getRandomInteger(1, 100);
+    }
+
+</script>
