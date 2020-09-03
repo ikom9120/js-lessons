@@ -1,0 +1,22 @@
+<script>
+
+    function getDisplayText(text1, text2, number) {
+        if (number == 0) {
+            text1();
+        }
+        else {
+            text2();
+        }
+    }
+    getDisplayText(
+        function () {
+            document.write('Первая анонимная функция');
+        },
+        function () {
+            document.write('Вторая анонимная функция');
+        },
+        5
+    )
+
+
+</script>
