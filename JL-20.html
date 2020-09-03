@@ -1,0 +1,11 @@
+<script>
+
+    function getHostAnonymous(param) {
+        return param;
+    }
+    let result = getHostAnonymous(function () {
+        document.write('Hello');
+    });
+    result();
+
+</script>
