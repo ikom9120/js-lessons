@@ -1,0 +1,19 @@
+<script>
+
+    //1
+    function getTimeSec() {
+        let s = new Date();
+        return s.getSeconds();
+    }
+
+    //2
+    if (getTimeSec() > 30 || getTimeSec() % 2 == 0) {
+
+        document.write('true');
+    }
+    else {
+        document.write('false');
+    }
+
+
+</script>
