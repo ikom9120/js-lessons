@@ -1,0 +1,24 @@
+<script>
+
+    //1
+    function getTimeSec() {
+        let s = new Date();
+        return s.getSeconds();
+    }
+
+    //2
+    function getDivides(result) {
+        return result / 2;
+    }
+
+    //3
+    function getCauses() {
+        if (getDivides() <= 30) {
+            return 'true';
+        }
+        else {
+            return 'false';
+        }
+    }
+    console.log(getCauses());
+</script>
