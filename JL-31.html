@@ -1,0 +1,13 @@
+<script>
+
+    function getReturnsTime(isShowSeconds = false) {
+        let d = new Date();
+        if (isShowSeconds == true) {
+            return d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+        }
+        else {
+            return d.getHours() + ':' + d.getMinutes();
+        }
+    }
+
+</script>
