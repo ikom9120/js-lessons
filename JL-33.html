@@ -1,0 +1,18 @@
+<script>
+
+    //1
+    function getRandomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+
+    //2
+    let ran = () => getRandomInteger(1, 100)
+    // console.log(ran());
+
+    //3
+    let number = ran();
+    number % 5 == 0 ? document.write('true') : document.write('false');
+   // console.log(number);
+   
+</script>
