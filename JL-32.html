@@ -1,0 +1,20 @@
+<script>
+
+    //1
+    function getRandomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+
+    //2
+    let number = getRandomInteger(1, 100);
+    if (number % 5 == 0) {
+        document.write('true');
+    }
+    else {
+        document.write('false');
+    }
+
+    //console.log(number);
+
+</script>
