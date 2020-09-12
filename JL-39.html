@@ -1,0 +1,30 @@
+<script>
+
+    //1
+    let colors = ['red', 'yellow', 'white'];
+    //console.log(colors);
+
+    //2
+    if (Array.isArray(colors)) {
+        document.write('Переменная является массивом');
+    }
+    else {
+        document.write('Переменная не является массивом');
+    }
+
+    //3
+    function isHaveElement(colors) {
+       return colors.includes('green');
+    }
+
+    if (isHaveElement(colors)) {
+        document.write('true');
+    }
+    else {
+        document.write('false');
+    }
+
+
+
+
+</script>
