@@ -1,0 +1,17 @@
+<script>
+
+    //1
+    function getRandomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+    //console.log(getRandomInteger(1, 100));
+
+    //2
+    let number = [getRandomInteger(1, 100), getRandomInteger(1, 100), getRandomInteger(1, 100), getRandomInteger(1, 100), getRandomInteger(1, 100)];
+    // console.log(number);
+
+    //3
+    document.write(number[0]);
+
+</script>
