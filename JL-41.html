@@ -1,0 +1,21 @@
+<script>
+
+    //1
+    let colors = ['red', 'yellow', 'white', 'green', 'blue'];
+    document.write(colors + '<br>');
+    let random = Math.floor(Math.random() * colors.length);
+    colors.splice(random, 1);
+    document.write(colors);
+
+    document.write('<br>');
+
+    //2
+    let color = ['red', 'yellow', 'white', 'green', 'blue'];
+    document.write(color + '<br>');
+    function shuffle(color) {
+        color.sort(() => Math.random() - 0.5);
+    }
+    shuffle(color);
+    document.write(color);
+
+</script>
