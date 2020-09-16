@@ -7,14 +7,14 @@
     colors.splice(random, 1);
     document.write(colors);
 
-    document.write('<br>');
+    document.write('<br><br>');
 
     //2
-    let color = ['red', 'yellow', 'white', 'green', 'blue'];
-    document.write(color + '<br>');
     function shuffle(color) {
         color.sort(() => Math.random() - 0.5);
     }
+    let color = ['red', 'yellow', 'white', 'green', 'blue'];
+    document.write(color + '<br>');
     shuffle(color);
     document.write(color);
 
