@@ -1,0 +1,29 @@
+<script>
+
+    //1
+    function getContainsNumber() {
+        for (let i = 0; i <= 10; i++) {
+            if (i > 3 && i < 7) {
+                continue;
+            }
+            document.write(i);
+        }
+    }
+    getContainsNumber();
+
+    document.write('<br>');
+
+    //2
+    function getReturnsNumber() {
+        let number = '';
+        for (let i = 0; i <= 10; i++) {
+            if (i > 3 && i < 7) {
+                continue;
+            }
+            number = number + i;
+        }
+        return number;
+    }
+    document.write(getReturnsNumber());
+
+</script>
