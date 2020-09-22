@@ -1,0 +1,11 @@
+<button id="button-id">Клик!</button>
+<div id="div-id">
+
+</div>
+<script>
+    let buttonEl = document.getElementById("button-id");
+    buttonEl.onclick = function () {
+        let divEl = document.getElementById("div-id");
+        divEl.innerHTML = "нажата кнопка";
+    };
+</script>
