@@ -1,0 +1,14 @@
+<button id="button-id">Клик!</button><br><br>
+<textarea id="textarea-id"></textarea>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    let textareaEl = document.getElementById('textarea-id');
+    textareaEl.onclick = function () {
+        textareaEl.value = 'меня кликнули';
+    };
+    buttonEl.onclick = function () {
+        textareaEl.value = ' ';
+    };
+
+</script>
