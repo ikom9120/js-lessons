@@ -1,0 +1,13 @@
+<button id="button-id">Клик!</button><br><br>
+<textarea id="textarea-id"></textarea>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    buttonEl.onclick = function () {
+        let textareaEl = document.getElementById('textarea-id');
+        let s = new Date();
+        textareaEl.value += s.getDate() + '.' + s.getMonth() + '.' + s.getFullYear() +
+            ' ' + s.getHours() + ':' + s.getMinutes() + ':' + s.getSeconds() + '\n';
+    };
+
+</script>
