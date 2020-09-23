@@ -1,0 +1,27 @@
+<button id="button-id">Клик!</button> <br><br>
+<table id="table-id" border="1">
+    <tr>
+        <td>Old top row</td>
+        <td>Old top row</td>
+
+    </tr>
+    <tr>
+        <td>Old top row</td>
+        <td>Old top row</td>
+
+    </tr>
+    <tr>
+        <td>Old top row</td>
+        <td>Old top row</td>
+
+    </tr>
+</table>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    let tableEl = document.getElementById('table-id');
+    buttonEl.onclick = function () {
+        tableEl.innerHTML += '<tr><td>Old top row</td><td>Old top row</td></tr>';
+    };
+
+</script>
