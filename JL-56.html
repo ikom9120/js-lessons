@@ -6,13 +6,8 @@
     buttonEl.onclick = function () {
         let textareaEl = document.getElementById('textarea-id');
         let s = new Date();
-        let day = s.getDate();
-        let month = s.getMonth();
-        let year = s.getFullYear();
-        let hours = s.getHours();
-        let minutes = s.getMinutes();
-        let seconds = s.getSeconds();
-        textareaEl.value += day + '.' + month + '.' + year + ' ' + hours + ':' + minutes + ':' + seconds + '\n';
+        textareaEl.value += s.getDate() + '.' + s.getMonth() + '.' + s.getFullYear() +
+            ' ' + s.getHours() + ':' + s.getMinutes() + ':' + s.getSeconds() + '\n';
     };
 
 </script>
