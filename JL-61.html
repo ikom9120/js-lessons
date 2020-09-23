@@ -1,0 +1,11 @@
+<button id="button-id">Клик!</button> <br><br>
+<div id="div-id" style="border:1px solid black; width: 100px; min-height: 100px;"></div>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    let divElement = document.getElementById('div-id');
+    buttonEl.onclick = function () {
+        divElement.innerHTML += '<div style="border:1px solid red; width: 50px; height: 50px;"></div>';
+    };
+
+</script>
