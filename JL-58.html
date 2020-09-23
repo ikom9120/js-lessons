@@ -1,0 +1,15 @@
+<ul id="ul-id">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<button id="button-id">добавить элемент</button><br><br>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    let ulElement = document.getElementById('ul-id');
+    buttonEl.onclick = function () {
+        ulElement.innerHTML += '<li>4</li>';
+    };
+
+</script>
