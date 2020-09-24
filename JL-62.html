@@ -1,0 +1,26 @@
+<!-- 1 -->
+<div id="div-id"></div>
+<input type="text" id="input-id">
+
+<script>
+    let divElement = document.getElementById('div-id');
+    let inputElement = document.getElementById('input-id');
+    inputElement.onkeydown = function () {
+        divElement.innerHTML += 'зафиксировано нажатие клавиши<br>';
+    };
+</script>
+
+<br><br>
+
+<!-- 2 -->
+<div id="div-id-2"></div>
+<input type="text" id="input-id-2">
+
+<script>
+    let divElement2 = document.getElementById('div-id-2');
+    let inputElement2 = document.getElementById('input-id-2');
+    inputElement2.onkeydown = function (e) {
+        divElement2.innerHTML += e.key;
+
+    };
+</script>
