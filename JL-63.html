@@ -1,0 +1,40 @@
+<table id="table-id" border="1">
+    <tr>
+        <td>Old 1</td>
+        <td>Old 2</td>
+        <td>Old 3</td>
+
+    </tr>
+    <tr>
+        <td>Old 4</td>
+        <td>Old 5</td>
+        <td>Old 6</td>
+
+    </tr>
+    <tr>
+        <td>Old 7</td>
+        <td>Old 8</td>
+        <td>Old 9</td>
+
+    </tr>
+    <tr>
+        <td>Old 10</td>
+        <td>Old 11</td>
+        <td>Old 12</td>
+
+    </tr>
+    <tr>
+        <td>Old 13</td>
+        <td>Old 14</td>
+        <td>Old 15</td>
+
+    </tr>
+</table>
+
+<script>
+    let tableEl = document.getElementById('table-id');
+    for (let i = 0; i < tableEl.rows.length; i++) {
+        document.write(tableEl.rows[i].cells[1].innerHTML + '<br>');
+    }
+
+</script>
