@@ -1,0 +1,49 @@
+<button id="button-id">Клик!</button> <br><br>
+<table id="table-id" border="1">
+    <tr>
+        <td>Old 1</td>
+        <td>Old 2</td>
+        <td>Old 3</td>
+        <td>Old 4</td>
+
+    </tr>
+    <tr>
+        <td>Old 5</td>
+        <td>Old 6</td>
+        <td>Old 7</td>
+        <td>Old 8</td>
+
+    </tr>
+    <tr>
+        <td>Old 9</td>
+        <td>Old 10</td>
+        <td>Old 11</td>
+        <td>Old 12</td>
+
+    </tr>
+    <tr>
+        <td>Old 13</td>
+        <td>Old 14</td>
+        <td>Old 15</td>
+        <td>Old 16</td>
+
+    </tr>
+    <tr>
+        <td>Old 17</td>
+        <td>Old 18</td>
+        <td>Old 19</td>
+        <td>Old 20</td>
+
+    </tr>
+</table>
+
+<script>
+    let buttonEl = document.getElementById('button-id');
+    let tableEl = document.getElementById('table-id');
+    buttonEl.onclick = function () {
+        for (let i = 0; i < tableEl.rows.length; i++) {
+            tableEl.rows[i].cells[1].style.backgroundColor = 'red';
+        }
+    }
+
+</script>
