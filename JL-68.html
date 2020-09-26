@@ -1,0 +1,13 @@
+<div id="div" style="border:1px solid red; width: 100px; height: 100px;"></div><br>
+<button id="button">Click</button>
+
+<script>
+    function getRandomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+    document.getElementById('button').onclick = function () {
+        document.getElementById('div').style.marginLeft = getRandomInteger(10, 100);
+    };
+
+</script>
