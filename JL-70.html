@@ -1,0 +1,11 @@
+<div id="div" style="border:1px solid red; width: 100px; height: 100px;"></div><br>
+<button id="button">Click</button>
+
+<script>
+    document.getElementById('button').onclick = function () {
+        setTimeout(function () {
+            document.getElementById('div').style.display = 'none';
+        }, 3000);
+    };
+
+</script>
