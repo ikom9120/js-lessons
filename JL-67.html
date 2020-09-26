@@ -1,0 +1,17 @@
+<div id="form-div">
+    Логин:
+    <input type="text"><br><br>
+    Пароль:
+    <input type="password"><br><br>
+    <button id="auth-button">Войти</button><br><br>
+</div>
+
+<div id="result-div"></div>
+
+<script>
+    document.getElementById('auth-button').onclick = function () {
+        document.getElementById('form-div').style.display = 'none';
+        document.getElementById('result-div').innerHTML = 'Вы успешно авторизовались!';
+    };
+
+</script>
