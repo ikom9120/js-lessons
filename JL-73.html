@@ -1,0 +1,12 @@
+<div id="div"></div>
+
+<script>
+    function getReturnsTime() {
+        let d = new Date();
+        return d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    };
+    setInterval(function () {
+        document.getElementById('div').innerHTML = getReturnsTime();
+    }, 1000);
+
+</script>
