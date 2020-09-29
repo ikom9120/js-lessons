@@ -1,0 +1,22 @@
+<div id="div" style="border:1px solid red; width: 100px; height: 100px; position: absolute;"></div>
+
+<script>
+    let divElement = document.getElementById('div');
+    document.onkeydown = function (e) {
+        // console.log(e.key);
+        if (e.key == 'w') {
+            divElement.style.top = (divElement.offsetTop - 100) + 'px';
+        }
+        if (e.key == 's') {
+            divElement.style.top = (divElement.offsetTop + 100) + 'px';
+        }
+
+        if (e.key == 'a') {
+            divElement.style.left = (divElement.offsetLeft - 100) + 'px';
+        }
+        if (e.key == 'd') {
+            divElement.style.left = (divElement.offsetLeft + 100) + 'px';
+        }
+    };
+
+</script>
