@@ -1,4 +1,4 @@
-<table id="table" border="1px">
+<table id="table" border="1">
     <tr>
         <td> №</td>
         <td> Название</td>
@@ -17,7 +17,7 @@
     document.getElementById('button').onclick = function () {
         setInterval(function () {
             document.getElementById('table').innerHTML += '<tr><td>text</td>' +
-                '<td>text</td><td>text</td>'
+                '<td>text</td><td>text</td>';
         }, 3000);
     };
 </script>
