@@ -1,0 +1,23 @@
+<table id="table" border="1">
+    <tr>
+        <td> №</td>
+        <td> Название</td>
+        <td>Цена,грн </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Тушь</td>
+        <td>120</td>
+    </tr>
+</table><br>
+
+<button id="button">Click</button>
+
+<script>
+    document.getElementById('button').onclick = function () {
+        setInterval(function () {
+            document.getElementById('table').innerHTML += '<tr><td>text</td>' +
+                '<td>text</td><td>text</td>';
+        }, 3000);
+    };
+</script>
