@@ -1,0 +1,16 @@
+<button id="start">Start</button>
+<button id="stop">Stop</button><br>
+<div id="div"></div>
+
+<script>
+    let timerId;
+    document.getElementById('start').onclick = function () {
+        timerId = setInterval(function () {
+            document.getElementById('div').innerHTML += 'text<br>';
+        }, 3000);
+    };
+
+    document.getElementById('stop').onclick = function () {
+        clearInterval(timerId);
+    };
+</script>
