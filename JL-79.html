@@ -1,0 +1,17 @@
+<div id="div"></div>
+
+<script>
+    for (let i = 1; i <= 100; i++) {
+        if (i % 5 == 0) {
+            continue;
+        }
+
+        if (i % 3 == 0) {
+            document.getElementById('div').innerHTML += i + ' делиться на 3 без остатка<br>';
+            continue;
+        }
+
+        document.getElementById('div').innerHTML += i + '<br>';
+    }
+
+</script>
