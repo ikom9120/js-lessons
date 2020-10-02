@@ -1,0 +1,13 @@
+<div id="div"></div>
+<script>
+    function daysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+    //console.log(daysInMonth(10,2020));
+
+    for (let i = 1; i <= daysInMonth(10, 2020); i++) {
+        if (i % 2 == 0) {
+            document.getElementById('div').innerHTML += i + ' ';
+        }
+    }
+</script>
