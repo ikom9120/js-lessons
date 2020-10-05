@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+jQuery@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/jQuery/-/jQuery-1.7.4.tgz#f32dc5c85a7044ee864b4443b9ee45f9478ba137"
+  integrity sha1-8y3FyFpwRO6GS0RDue5F+UeLoTc=
+
 sweetalert2@^10.3.5:
   version "10.3.5"
   resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-10.3.5.tgz#e5a10ad789163e85ec6031a413b08b20e5aae0a4"
