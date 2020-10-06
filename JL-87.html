@@ -17,12 +17,14 @@
                     url: 'http://js-lessons.test/backend.php',             // указываем URL и
                     dataType: "json",
                     timeout: 10 * 1000,                    // тип загружаемых данных
-                    success: function (data) { // вешаем свой обработчик на функцию success
+                    success: function (data) {
+                        // анонимная функция, которая выполниться если запрос успешен (success-успех)
                         //console.log(data['t']);
 
                         $('.temp').html('температура: ' + data['t'] + ' C');
                     },
-                    error: function (data) { // вешаем свой обработчик на функцию success
+                    error: function (data) {
+                        // анонимная функция, которая выполниться если запрос не успешен (error-ошибка)
 
                         Swal.fire(
                             'Ошибка соединения.'
