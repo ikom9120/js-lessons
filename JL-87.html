@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <button id="button">Click</button>
+    <div class="temp"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('#button').click(function () {
+                $.ajax({
+                    url: 'http://js-lessons.test/backend.php',             // указываем URL и
+                    dataType: "json",
+                    timeout: 10 * 1000,                    // тип загружаемых данных
+                    success: function (data) {
+                        // анонимная функция, которая выполниться если запрос успешен (success-успех)
+                        //console.log(data['t']);
+
+                        $('.temp').html('температура: ' + data['t'] + ' C');
+                    },
+                    error: function (data) {
+                        // анонимная функция, которая выполниться если запрос не успешен (error-ошибка)
+
+                        Swal.fire(
+                            'Ошибка соединения.'
+                        );
+
+                        // console.log(data);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
