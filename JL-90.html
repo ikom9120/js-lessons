@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="number">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="result"></div>
+
+    <script>
+        function getRandomInteger(min, max) {
+            let rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+
+        $(document).ready(function () {
+            //console.log($('.number div'));
+            let divs = $('.number div');
+            $.each(divs, function (index, value) {
+                // console.log(value);
+                $('.result').append(getRandomInteger(1, 5) + ',');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
