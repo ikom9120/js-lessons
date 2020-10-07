@@ -5,10 +5,18 @@
 </head>
 
 <body>
+    <div class="color"></div>
     <script>
         let colors = ['red', 'green', 'blue', 'black', 'yellow'];
         $.each(colors, function (index, value) {
-            console.log('Ключ элемента: ' + index + '; Значение элемента: ' + value );
+            console.log('Ключ элемента: ' + index + '; Значение элемента: ' + value);
+        });
+
+        $.each(colors, function (index, value) {
+            //  let current= $('.color').html()+'Ключ элемента: ' + index + '; Значение элемента: ' + value
+            // $('.color').html(current);
+
+            $('.color').append('Ключ элемента: ' + index + '; Значение элемента: ' + value + '<br>');
         });
 
     </script>
