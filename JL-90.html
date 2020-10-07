@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="number">
+        <div><b>1</b></div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="result"></div>
+
+    <script>
+        
+        $(document).ready(function () {
+           
+            let divs = $('.number div');
+           // console.log($('.number div'));
+            $.each(divs, function (index, value) {
+                //console.log(value);
+                $('.result').append( $(value).html() + ' ');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
