@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+    <button class="move">move</button><br><br>
+    <div id="div-1" style="border:1px solid red; width: 100px; height: 100px; position: absolute;"></div><br>
+    <div id="div-2" style="border:1px solid green; width: 100px; height: 100px;position: absolute;"></div>
+    <script>
+
+        $(document).ready(function () {
+
+            $('.move').on('click', function () {
+
+                $('#div-1').animate({
+                    left: '300px'
+                });
+                $('#div-2').animate({
+                    left: '200px'
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
