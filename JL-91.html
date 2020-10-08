@@ -6,42 +6,39 @@
 </head>
 
 <body>
-    <button class="hide">Скрыть</button>
-    <button class="show">Показать</button> <br><br>
-    <table id="table" border="1">
+    <button class="toggle">toggle</button><br><br>
 
-        <tr>
-            <td>Old top row</td>
-            <td>Old top row</td>
-            <td>Old top row</td </tr>
-        <tr>
-            <td>Old top row</td>
-            <td>Old top row</td>
-            <td>Old top row</td </tr>
-        <tr>
-            <td>Old top row</td>
-            <td>Old top row</td>
-            <td>Old top row</td </tr>
-        <tr>
-            <td>Old top row</td>
-            <td>Old top row</td>
-            <td>Old top row</td </tr>
-        <tr>
-            <td>Old top row</td>
-            <td>Old top row</td>
-            <td>Old top row</td </tr>
-    </table>
+    <div class="table">
+        <table id="table-id" border="1">
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+        </table>
+    </div>
 
     <script>
 
         $(document).ready(function () {
 
-            $('.hide').on('click', function () {
-                $('#table').hide();
-            });
-
-            $('.show').on('click', function () {
-                $('#table').slideDown();
+            $('.toggle').on('click', function () {
+                $('.table').slideToggle();
             });
         });
 
