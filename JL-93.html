@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+    <button class="toggle">toggle</button><br><br>
+
+    <div class="table">
+        <table id="table-id" border="1">
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+            <tr>
+                <td>Old top row</td>
+                <td>Old top row</td>
+                <td>Old top row</td </tr>
+        </table>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.toggle').on('click', function () {
+                $('.table').slideToggle(2500); // можно 'slow' или 'fast'
+            });
+        });
+
+    </script>
+</body>
+
+</html>
