@@ -5,7 +5,8 @@
 </head>
 
 <body>
-    <div id="div" style="border:1px solid red; width: 100px; height: 100px;margin-left: 20%;margin-top: 20%;">
+    <div id="div"
+        style="border:1px solid red; width: 100px; height: 100px;margin-left: 20%;margin-top: 20%;position: absolute">
         <script>
             function getRandomInteger(min, max) {
                 let rand = min - 0.5 + Math.random() * (max - min + 1);
@@ -16,24 +17,25 @@
                 $('#div').mouseover(function () {
                     console.log('событие сработало');
                     let random = getRandomInteger(1, 4);
+                    console.log(random);
                     if (random == 1) {
                         $('#div').animate({
-                            marginLeft: '30px'
+                            top: '30px'
                         });
                     }
                     if (random == 2) {
                         $('#div').animate({
-                            marginRight: '30px'
+                            top: '-30px'
                         });
                     }
                     if (random == 3) {
                         $('#div').animate({
-                            marginTop: '30px'
+                            left: '30px'
                         });
                     }
                     if (random == 4) {
                         $('#div').animate({
-                            marginBottom: '30px'
+                            left: '-30px'
                         });
                     }
                 });
