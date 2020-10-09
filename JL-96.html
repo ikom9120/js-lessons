@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <div id="div-1" style="border:1px solid red; width: 50px; height: 50px"></div><br>
+    <div id="div-2" style="border:1px solid green; width: 50px; height: 50px"></div><br>
+    <div id="div-3" style="border:1px solid rgb(221, 187, 223); width: 50px; height: 50px"></div><br>
+    <div id="div-4" style="border:1px solid rgb(22, 21, 21); width: 50px; height: 50px"></div><br>
+    <div id="div-5" style="border:1px solid rgb(201, 245, 6); width: 50px; height: 50px"></div><br>
+    <div id="div-6" style="border:1px solid rgb(15, 223, 43); width: 50px; height: 50px"></div><br>
+    <div id="div-7" style="border:1px solid rgb(243, 188, 188); width: 50px; height: 50px"></div><br>
+    <div id="div-8" style="border:1px solid rgb(64, 11, 211); width: 50px; height: 50px"></div><br>
+    <div id="div-9" style="border:1px solid rgb(172, 47, 197); width: 50px; height: 50px"></div><br>
+    <div id="div-10" style="border:1px solid rgb(12, 164, 235); width: 50px; height: 50px"></div>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#div-1').on('click', function () {
+                $('#div-1').animate({
+                    marginLeft: '300px'
+                }, function () {
+                    $('#div-2').animate({
+                        marginLeft: '300px'
+                    }, function () {
+                        $('#div-3').animate({
+                            marginLeft: '300px'
+                        }, function () {
+                            $('#div-4').animate({
+                                marginLeft: '300px'
+                            }, function () {
+                                $('#div-5').animate({
+                                    marginLeft: '300px'
+                                }, function () {
+                                    $('#div-6').animate({
+                                        marginLeft: '300px'
+                                    }, function () {
+                                        $('#div-7').animate({
+                                            marginLeft: '300px'
+                                        }, function () {
+                                            $('#div-8').animate({
+                                                marginLeft: '300px'
+                                            }, function () {
+                                                $('#div-9').animate({
+                                                    marginLeft: '300px'
+                                                }, function () {
+                                                    $('#div-10').animate({
+                                                        marginLeft: '300px'
+                                                    }, function () {
+                                                        Swal.fire(
+                                                            'Все анимации завершены'
+                                                        )
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
