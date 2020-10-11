@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    Имя:<br>
+    <input type="text" id="name"><br><br>
+    Комментарий:<br>
+    <textarea id="comment"></textarea> <br><br>
+    <button id="send">Отправить</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#send').on('click', function () {
+                $.ajax({
+                    url: 'http://js-lessons.test/backend/commentCreate.php',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {
+                        name: $('#name').val(),
+                        comment: $('#comment').val(),
+                    },
+                    timeout: 5 * 1000,
+                    success: function (response) {
+                        $('#name').val('');
+                        $('#comment').val('');
+                    },
+                    error: function (response) {
+                        Swal.fire(
+                            'Ошибка отправки'
+                        );
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
