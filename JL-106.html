@@ -88,10 +88,11 @@
         });
         $('#sec').keyup(function () {
             //console.log('12');
-            if (Number.isInteger($('#sec').val()) === false) {
+            if ($('#sec').val().match(/^[0-9]+$/) == null) {
                 Swal.fire(
                     'Ошибка.Допустим ввод только целого числа.'
                 );
+                return ;
             }
 
             if ($('#sec').val() >= 5) {
