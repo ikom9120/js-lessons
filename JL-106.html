@@ -88,13 +88,22 @@
         });
         $('#sec').keyup(function () {
             //console.log('12');
-            if ($('#sec').val().match(/^[0-9]+$/) == null) {
+            //проверка на наличие данных
+            if ($('#sec').val() === '') {
+                return;
+            }
+
+            // проверка на целое число
+            if (/^\d+$/.test($('#sec').val()) !== true) {
+
                 Swal.fire(
                     'Ошибка.Допустим ввод только целого числа.'
                 );
-                return ;
+                $('#sec').val('');
+                return;
             }
 
+            //проверка числа на корректность
             if ($('#sec').val() >= 5) {
                 clearInterval(time);
                 time = setInterval(getComments, $('#sec').val() * 1000);
